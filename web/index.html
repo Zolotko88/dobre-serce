@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dobre serce</title>
+    <link rel="stylesheet" type="text/css" href="D:\web\css\style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="./js/JavaScript.js"></script>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="content" id="blur">
+
+
+      <div class="container" id="back">
+      <div class="header">
+        <a href="index.html"><img class="heart-icon" src="./assets/images/heart.svg" alt="" /></a>
+
+        <div class="language">
+          <ul>
+            <li><a href="#">УКР</a></li>
+            <li><a href="#">РУС</a></li>
+            <li><a href="#">EN</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-main">
+          <div class="menu-href"><a class="menu-href" href="projects.html">Проекти</a></div>
+          <div class="menu-href"><a class="menu-href" href="archive.html">Архів</a></div>
+          <div class="menu-href"><a class="menu-href" href="contacts.html">Контакти</a></div>
+          <div class="button-bg"><a class="aid" href="help.html">Термінова допомога</a></div>
+        </div>
+
+        <a href="#" onclick="toggle2()"><img class="shape" src="./assets/images/shape.svg" alt="" /></a>
+
+        <div><a class="login2" onclick="toggle4()" href="#">Вхід / Зареєструватися</a></div>
+      </div>
+      </div>
+
+      
+      <div id="front">
+        <div><input type="text" maxlength="0"  class="search" onkeypress="plusInformation()" ></div> 
+        <span id="search2">Пошук</span>
+        <a href="#" onclick="toggle2()" class="close2"><img src="./assets/images/assistance_close.svg" alt=""></a>
+        <div id="money">
+          <div class="money1">Гроші на ліки</div>
+          <div class="money2">
+            <div class="money-column money-main">
+              <div>Проекти</div>
+              <div>Архів</div>
+            </div>
+            <div class="money-column">
+              <div class="money-row">
+                <div class="money-text2">
+                  <h4>Діти</h4>
+                  Для операції на сердце маленькому хлопчику, необхідно зібрати гроші на ліки<br>
+                  <div class="line2">Збираємо гроші на лікування п’ятирічного Василя, який став жертвою ДТП </div>
+                </div>
+                <div class="money-text">
+                  <h4>Війна</h4>
+                  Необхідно зібрати ліки для поранених бійців із зони АТО 
+                </div>
+              </div>
+              <div class="line2 money-column2">
+                <h4>Діти</h4>
+                <div>Необхідно купити ліки для дитячого будинку в місті Київ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="main">
+        <div class="text-1">
+           <h1 class="text-1-wording">Добре Серце</h1>
+           <div class="text-1-link">детальніше про проект<a href="#"><img src="./assets/images/pointer.svg" alt=""></a></div>
+          </div>
+        <div class="text-2">
+            <div class="line"></div>
+            <div class="text-wording"> Вже зараз Ви можете допомогти тим, хто дійсно потребує допомоги</div>
+            <div class="text-2-link">
+             <div>Як Ви можете допомогти?<a href="#" onclick="toggle()"> <img src="./assets/images/pointer.svg" alt=""></a></div>
+             <button class="button" onclick="toggle3()"> Допомогти вже зараз </button>
+            </div>
+        </div>
+        <div class="text-3">
+            <div class="line"></div>
+            <div class="text-wording">Якщо Вам необхідна допомога, додайте проект</div>
+            <div class="text-3-link">
+             Додати проект<a href="#">
+               <div>
+               <img  src="./assets/images/pointer2.svg" alt="">
+              </div>
+              </a>
+            </div>
+        </div>
+      </div>
+
+
+      <div><img class="big-heart" src="./assets/images/big_heart.svg" alt=""/></div>
+
+      
+      <div class="footer"> 
+        <div class="footer-1">
+          <h5>Розповісти всім:</h5>
+          <a href="#">
+            <img class="social-icon" src="./assets/images/twitter.svg" alt="" />
+          </a>
+          <a href="#">
+            <img class="social-icon" src="./assets/images/facebook.svg" alt="" />
+          </a>
+          <a href="#">
+            <img class="social-icon" src="./assets/images/vk.svg" alt="" />
+          </a>
+        </div>
+        <button><div class="footer-2">
+            <img class="chat-icon" src="./assets/images/chat.svg" alt="" />
+        </div></button>
+      </div>
+      
+    </div>
+
+
+
+
+
+
+
+
+    <div id="plus">
+      <a href="#" onclick="toggle()" class="close"><img src="./assets/images/assistance_close.svg" alt=""></a>
+     <div  class="types_of_assistance">
+      <h1>Види допомоги</h1>
+      <div class="assistance_text">
+        <div>
+            <a href="#"><img src="./assets/images/assistance_1.svg" alt=""></a>
+            <div class="assistance_text_1">Натискайте цю кнопку,
+              якщо Ви хочете зробити,
+              наприклад: ремонт у 
+              дитячому будинку,
+              складну операцію,
+              побудувати дитячий
+              майданчик або побудувати житло
+              для переселенців і тд.<br>
+              Ця кнопка, для організацій, які можуть 
+              взяти на себе відповідальність за увесь проект. </div>
+        </div>
+        <div>
+            <a href="#"><img src="./assets/images/assistance_2.svg" alt=""></a>
+            <div class="assistance_text_1">
+              Перераховуйте гроші тим, 
+              хто дійсно потребує цього. </div>
+        </div>
+        <div>
+            <a href="#"><img src="./assets/images/assistance_3.svg" alt=""></a>
+            <div class="assistance_text_1">
+              Зберіть ліки, речі, їжу,
+              іграшки та інше, для тих, кому це необхідно.
+            </div>
+        </div>
+        <div>
+            <a href="#"><img src="./assets/images/assistance_4.svg" alt=""></a>
+            <div class="assistance_text_1">
+              Допоможіть ділом або професійними навичками.
+              Підтримайте проекти своєю роботою. 
+            </div>
+        </div>
+      </div>
+       </div>
+     </div>
+
+
+     <div id="forms">
+
+      <a href="#" onclick="toggle3()" class="close"><img src="./assets/images/assistance_close.svg" alt=""></a>
+
+
+     <div  class="forms-main">
+         <h1>Заповніть форму</h1>
+         <div class="form-button"> 
+           <div class="form-button2">
+            <button id="swit" class="active" onclick="readMore()">Фіз. особа</button>
+            <button id="swit2" onclick="readMore()">Юр. особа</button>
+          </div>
+         </div>
+
+         <span id="dots"></span>
+
+         <div class="form-text">
+           <div class="column-1">
+             <div class="row-input">
+                  <div class="first-input">
+                    <div>Ім'я</div>
+                    <input type="text" name="name" class="#">
+                  </div>
+                  <div class="first-input">
+                    <div>Фамілія</div>
+                    <input type="text" name="surname" class="#">
+                  </div>
+              </div>
+              <div class="second-input">
+                   <div>Назва компанії, організації</div>
+                   <input type="text"  name="company" class="#">
+               </div>
+               <div class="second-input">
+                   <div>Email-адрес</div>
+                   <input type="email" name="email" class="#">
+               </div>
+               <div class="second-input">
+                    <div>Номер телефону</div>
+                    <input type="tel" name="phone" class="#">
+               </div>
+           </div>
+           <div class="link">
+            <a href="">+ Логотип</a>
+          </div>
+           <div class="column-2">
+               <div class="second-input">
+                     <div>Країна</div>
+                     <input type="text" name="country" class="#">
+               </div>
+               <div class="row-input">
+                  <div class="first-input">
+                      <div>Місто</div>
+                      <input type="text" name="city" class="#">
+                   </div>
+                  <div class="first-input">
+                      <div>Штат.Район</div>
+                      <input type="text" name="state" class="#">
+                  </div>
+              </div>
+              <div class="second-input">
+                    <div>Адреса</div>
+                    <input type="text" name="direction" class="#">
+              </div>
+              <div class="first-input">
+                    <div>Поштовий індекс</div>
+                    <input type='number' name="Post-index" class="#">
+              </div>
+           </div>
+         </div>
+
+
+
+          <div id="more">
+
+          <div class="form-text">
+           <div class="column-1">
+              <div class="second-input">
+                    <div>Юридична адреса</div>
+                    <input type="text"  name="address" class="#">
+                </div>
+             <div class="row-input">
+                  <div class="first-input">
+                    <div>Найменування банку</div>
+                    <input type="text" name="bank-name" class="#">
+                  </div>
+                  <div class="first-input">
+                    <div>МФО банку</div>
+                    <input type="text" name="mfo-bank" class="#">
+                  </div>
+              </div>
+               <div class="second-input">
+                    <div>Розрахунковий рахунок</div>
+                    <input type="number" name="current-account" class="#">
+               </div>
+           </div>
+           <div class="column-2">
+                <div class="row-input">
+                    <div class="first-input">
+                       <div>ЗКПО</div>
+                       <input type="number" name="zkpo" class="#">
+                     </div>
+                    <div class="first-input">
+                        <div>Тип оподаткування</div>
+                       <input type="text" name="type-of-taxation" class="#">
+                     </div>
+                 </div>
+                 <div class="row-input">
+                    <div class="first-input">
+                      <div>ІНН</div>
+                      <input type="number" name="inn" class="#">
+                    </div>
+                   <div class="first-input">
+                      <div>Система оподаткування</div>
+                      <input type="text" name="taxation-system" class="#">
+                    </div>
+                 </div>
+                <div class="row-input">
+                    <div class="first-input">
+                       <div>Телефон бугалтерії</div>
+                       <input type="number" name="accounting" class="#">
+                     </div>
+                     <div class="first-input">
+                       <div>Факс</div>
+                       <input type="text" name="fax" class="#">
+                     </div>
+                 </div>
+              </div>
+           </div>
+
+          </div>
+
+
+
+         <h1>Види допомоги</h1>
+         <div class="text-kind-help">Ви можете змінити вид допомоги</div>
+
+         <div class="tab_container">
+          <div class="tabs">
+            <div class="tabs__nav">
+              <div class="tabs-nav__item is-active" data-tab-name="tab-1">
+                <img src="./assets/images/assistance_1.svg" alt="">
+              </div>
+              <div class="tabs-nav__item" data-tab-name="tab-2">
+                <img src="./assets/images/assistance_2.svg" alt="">
+              </div>
+              <div class="tabs-nav__item" data-tab-name="tab-3">
+                <img src="./assets/images/assistance_3.svg" alt="">
+              </div>
+              <div class="tabs-nav__item" data-tab-name="tab-4">
+                <img src="./assets/images/assistance_4.svg" alt="">
+              </div>
+            </div>
+            <div class="tabs__content">
+              <div class="tab is-active tab-1"> Зробити...</div>
+              <div class="tab tab-2">
+                <div class="fin">
+                <div>
+                  <div class="fin-text">Спосіб оплати</div>
+                  <div class="fin-icons">
+                    <div><img src="./assets/images/financial_aid_1.svg" alt=""></div>
+                    <div><img src="./assets/images/financial_aid_2.svg" alt=""></div>
+                    <div><img src="./assets/images/financial_aid_3.svg" alt=""></div>
+                  </div>
+                  <div class="fin-icons">
+                    <div><img src="./assets/images/financial_aid_4.svg" alt=""></div>
+                    <div><img src="./assets/images/financial_aid_5.svg" alt=""></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="fin-text">Введіть наступні данні</div>
+                  <div>
+                    <!--<img src="./assets/images/financial_aid_6.svg" alt="">-->
+                    <div class="card-main">
+                      <div>
+                          <div class="card-text">Номер карти</div>
+                          <div class="card-row">
+                              <input type="tel" name="num1" oninput="f_Date(this,4)" class="card-num">
+                              <input type="tel" name="num2" oninput="f_Date(this,4)" class="card-num">
+                              <input type="tel" name="num3" oninput="f_Date(this,4)" class="card-num">
+                              <input type="tel" maxlength="4" name="num4" oninput="f_Date(this,4)" class="card-num">
+                           </div>
+                      </div>
+                      <div class="card-row">
+                        <div>
+                          <div class="card-text">Термін дії</div>
+                          <div><input type="tel" name="term" id="date" class="card-else"></div>
+                        </div>
+                        <div>
+                          <div>
+                            <div class="card-text">CVC/CVV</div>
+                            <div><input type="tel" maxlength="3" placeholder="_ _ _" name="cvc" class="card-else"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="tab tab-3">Матеріальна допомога...</div>
+              <div class="tab tab-4">Волонтерство...</div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-help"><button class="btn-help2">Допомогти</button></div>
+        
+     </div>
+     
+     </div>
+
+     <div id="login">
+      <a href="#" onclick="toggle4()" class="login-close"><img src="./assets/images/assistance_close.svg" alt=""></a>
+      <div class="form">
+        <div class="head" class="signup">
+          <div onclick="changeTab(this)" data-tab="login" class="login-tab">Login</div>
+          <div onclick="changeTab(this)" data-tab="signup" class="signup-tab">Signup</div>
+        </div>
+        <div class="body" id="form-body">
+          <div class="login">
+            <div class="form-row">
+              <label for="">Email</label>
+              <input type="text" placeholder="Email">
+            </div>
+            <div class="form-row">
+              <label for="">Password</label>
+              <input type="password" placeholder="Password">
+            </div>
+            <div class="rem-row">
+              <input type="checkbox" id="rem">
+              <label for="rem">Remember me</label>
+            </div>
+            <div class="form-row">
+              <button>Login</button>
+            </div>
+            <div class="row">
+              <span>OR</span>
+            </div>
+            <div class="login-footer">
+              <div class="social-form">
+                <img  class="social-icon" src="./assets/images/twitter.svg" alt="">
+              </div>
+              <div class="social-form">
+                <img  class="social-icon" src="./assets/images/facebook.svg" alt="">
+              </div>
+              <div class="social-form">
+                <img  class="social-icon" src="./assets/images/vk.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="signup">
+            <div class="form-row">
+              <label for="">Name</label>
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="form-row">
+              <label for="">Email</label>
+              <input type="text" placeholder="Email">
+            </div>      
+            <div class="form-row">
+              <label for="">Password</label>
+              <input type="password" placeholder="Password">
+            </div>
+            <div class="form-row">
+              <label for="">Retype Password</label>
+              <input type="password" placeholder="Password">
+            </div>      
+            <div class="rem-row">
+              <input type="checkbox" id="agr">
+              <label for="agr">Agree terms & conditions.</label>
+            </div>      
+            <div class="form-row">
+              <button>Sign up</button>
+            </div>      
+          </div>
+        </div>
+      </div>
+
+    
+
+     </div>
+    
+
+  </body>
+</html>
