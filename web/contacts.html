@@ -32,7 +32,7 @@
 
         <a href="#" onclick="toggle2()"><img class="shape" src="./assets/images/shape.svg" alt="" /></a>
 
-        <div><a class="login" href="#">Вхід / Зареєструватися</a></div>
+        <div><a class="login2" onclick="toggle4()" href="#">Вхід / Зареєструватися</a></div>
       </div>
       </div>
 
@@ -99,5 +99,78 @@
       </div>
       
     </div>
+
+
+    <div id="login">
+      <a href="#" onclick="toggle4()" class="login-close"><img src="./assets/images/assistance_close.svg" alt=""></a>
+      <div class="form">
+        <div class="head" class="signup">
+          <div onclick="changeTab(this)" data-tab="login" class="login-tab">Вхід</div>
+          <div onclick="changeTab(this)" data-tab="signup" class="signup-tab">Зареєструватися</div>
+        </div>
+        <div class="body" id="form-body">
+          <div class="login">
+            <div class="form-row">
+              <label for="">Email</label>
+              <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="form-row">
+              <label for="">Password</label>
+              <input type="password" placeholder="Password">
+            </div>
+            <div class="rem-row">
+              <input type="checkbox" id="rem">
+              <label for="rem">Remember me</label>
+            </div>
+            <div class="form-row">
+              <button>Увійти</button>
+            </div>
+            <div class="row">
+              <span>АБО</span>
+            </div>
+            <div class="login-footer">
+              <div class="social-form">
+                <img  class="social-icon" src="./assets/images/twitter.svg" alt="">
+              </div>
+              <div class="social-form">
+                <img  class="social-icon" src="./assets/images/facebook.svg" alt="">
+              </div>
+              <div class="social-form">
+                <img  class="social-icon" src="./assets/images/vk.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="signup">
+            <div class="form-row">
+              <label for="">Name</label>
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="form-row">
+              <label for="">Email</label>
+              <input type="text" placeholder="Email" id="email2">
+            </div>      
+            <div class="form-row">
+              <label for="">Password</label>
+              <input type="password" placeholder="Password">
+            </div>    
+            <div class="rem-row">
+              <input type="checkbox" id="agr">
+              <label for="agr">Agree terms & conditions.</label>
+            </div>      
+            <div class="form-row">
+              <button>Зареєструватися</button>
+            </div>      
+          </div>
+        </div>
+      </div>
+
+    
+
+     </div>
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+     <script src="./js/JavaScript.js"></script>
+
   </body>
 </html>

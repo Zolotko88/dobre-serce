@@ -832,14 +832,12 @@ h5 {
 /*ВИДИ ДОПОМОГИ*/
 
 .tab_container{
-  max-width: 1000px;
   padding: 24px;
   font-family: sans-serif;
   font-size: 14px;
   margin-left: 4%;
 }
 .tabs__nav {
-  width: 80vw;
   display: flex;
   justify-content: space-around;
 }
@@ -865,7 +863,7 @@ h5 {
 
  .tabs-nav__item.is-active::after{
   margin-left: 9%;
-  margin-top: 3.9%;
+  margin-top: 4.1%;
   margin-bottom: -80%;
   content: '';
   display: block;
@@ -907,7 +905,77 @@ h5 {
 .fin-icons div{
   margin-right: 14px;
   margin-bottom: 17px;
+  
 }
+
+.bank-blok{
+  width: 170px;
+  height: 85px;
+  border-radius: 10px;
+  background: #c5d5e6;
+}
+.bank-blok:hover{
+  background: #9c5d9a;
+}
+
+
+
+.bank_visa{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 5%;
+  padding-left: 2%;
+}
+.bank_terminals{
+  padding-bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 7%;
+  padding-left: 2%;
+}
+.bank_visa_1{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.bank_text{
+  height: 16px;
+  color: #ffffff;
+  font-family: "Gilroy-Light";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}
+.bank_text_terminals{
+  height: 16px;
+  color: #ffffff;
+  font-family: "Gilroy-Light";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  padding-bottom: 20%;
+}
+.bank_privat_1{
+  height: 24px;
+  color: #ffffff;
+  font-family: "Gilroy-ExtraBold";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+.bank_terminals_1{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+
 .btn-help2{
   padding: 20px;
   width: 17%;
@@ -1126,7 +1194,8 @@ h5 {
 .form {
   width:480px;
   height:400px;
-  background:#fff;
+  /*background:#fff;*/
+  background-color: #fff;
   color: #000;
   box-shadow: 3px 4px 10px rgba(0,0,0,0.2);
   border-radius: 15px;
@@ -1147,13 +1216,14 @@ h5 {
   font-size:15px;
 }
 .form .head.signup > div:nth-child(1) {
-  background:#5ca5ff;
+  background: #3e88e2;
   border-radius: 15px 0 15px 0;
-  
+  cursor: pointer;
 }
 .form .head > div:nth-child(2) {
-  background:#5ca5ff;
+  background: #3e88e2;
   border-radius:  0 15px 0 15px;
+  cursor: pointer;
 }
 
 .form .head.signup > div:nth-child(2) {
@@ -1171,7 +1241,7 @@ h5 {
   position:absolute;
   width:100%;
   height:100%;
-  transition:all 400ms ease-in-out;
+  /*transition:all 400ms ease-in-out;*/
 }
 .form .body > div.login {
   left:0%;
@@ -1185,46 +1255,53 @@ h5 {
 .form .body.active > div.signup {
   left:0%;
 }
-.form .body .form-row {
-  border-top:1px solid #ccc;
-}
 .form .body .form-row label {
-  display:block;
-  padding:12px 10px 0px;
-  font-size:12px;
-  font-weight:600;
-  text-transform:uppercase;
+  display: block;
+    padding: 12px 10px 0px;
+    font-size: 14px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    margin-left: 10px;
+    margin-bottom: 7px;
 }
 .form .body .form-row input {
-  width:100%;
-  border:none;
-  outline:none;
-  height:32px;
-  text-indent:10px;
-  font-size:14px;
+  margin-left: 12px;
+  width: 95%;
+  outline: none;
+  text-indent: 10px;
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 2vh;
+  margin-right: 1vw;
+  opacity: 0.5;
+  background-color: #c5d5e6;
+  border-radius: 5px;
+  border: none;
+  height: 35px;
+  border-radius: 5px;
 }
 .form .body .form-row button {
-  width:100%;
-  border:none;
-  outline:none;
-  height:45px;
-  background:#3e88e2;
-  text-transform:uppercase;
-  color:#fcfcfc;
-  font-size:16px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 48px;
+  margin-bottom: 1%;
+  background: #3e88e2;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  font-size: 16px;
 }
 .form .body .signup .form-row button {
   background:#3e88e2;
 }
 .form .body .rem-row {
   padding:10px;
-  border-top:1px solid #ccc;
   line-height:30px;
 }
 .form .body .rem-row > input {
   width:17px;
   height:17px;
-  border:1px solid #999;
   border-radius:0px;
   position:relative;
   top:3px;
@@ -1235,7 +1312,8 @@ h5 {
 }
 .form .body .row {
   text-align:center;
-  padding:8px 0px;
+  padding:6px 0px 10px 0;
+  margin-bottom: 2%;
 }
 .form .body .row span {
   font-size:14px;
@@ -1245,13 +1323,15 @@ h5 {
   font-weight:600;
 }
 .form .body .login-footer {
-  display: flex;
-  bottom: 32%;
+  border-radius: 0 0 15px 15px;
+    background-color: #3e88e2;
+    display: flex;
+    bottom: 25%;
     justify-content: space-evenly;
-  position:absolute;
-  padding-bottom: 1.4vh;
-  width:100%;
-  border-top:1px solid #ccc;
+    position: absolute;   
+   height: 47px;
+   padding-top: 1%;
+    width: 100%;
 }
 .form .body .login-footer > div.social-form {
   float:left;
